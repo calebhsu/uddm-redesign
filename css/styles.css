@@ -1,0 +1,9 @@
+/* Global Styles */
+hr {
+  margin-bottom: 1.5em;
+}
+
+/* Materialize Styles */
+main .row {
+  margin-top: 2em;
+}
