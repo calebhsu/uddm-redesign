@@ -8,13 +8,16 @@
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
+  <link rel="stylesheet" href="css/styles.css">
+
   <meta charset="utf-8">
   <title>Business Bookkeepers</title>
 </head>
 <body>
   <!--Import jQuery before materialize.js-->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
 
   <!-- Navbar Here -->
   <nav class="navbar-fixed">
@@ -29,12 +32,20 @@
     </div>
   </nav>
 
-  <div class="parallax-container">
-    <div class="parallax"><img src="img/typing.jpg"></div>
-  </div>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/typing.jpg" alt="banner image of hands typing on laptop">
+        <div class="caption right-align bottom">
+          <h1>Business Bookkeepers</h1>
+        </div> <!-- caption -->
+      </li>
+    </ul>
+  </div> <!-- slider -->
+
   <div class="section white">
     <div class="row container">
-      <h2 class="header">Your Success is Our Success</h2>
+      <h3>Your Success is Our Success</h3>
       <p class="grey-text text-darken-3 lighten-3">
         At Business Bookkeepers, we offer services that will meet the needs of small businesses. Big or small, the needs will be met through our bookkeeping, payroll, human resource, business consulting services, and more.
       </p>
@@ -51,7 +62,7 @@
   </div>
 
   <div class="parallax-container">
-    <div class="parallax"><img src="img/accounting.png"></div>
+    <div class="parallax"><img src="img/accounting.png" alt="person writing on notepad"></div>
   </div>
 
   <!-- Intro Content Here -->

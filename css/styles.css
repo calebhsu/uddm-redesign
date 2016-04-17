@@ -7,3 +7,13 @@ hr {
 main .row {
   margin-top: 2em;
 }
+
+.slider .slides li .caption {
+  top: 45%;
+  left: 20%;
+}
+
+/* Special Styles */
+html #subtitle {
+  font-size: 2em;
+}
