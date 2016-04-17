@@ -9,11 +9,21 @@ main .row {
 }
 
 .slider .slides li .caption {
-  top: 45%;
-  left: 20%;
+  top: 25%;
+  left: 25%;
 }
 
 /* Special Styles */
-html #subtitle {
-  font-size: 2em;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.subtitle {
+  font-size: 1.6em;
 }
