@@ -19,10 +19,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
   <!-- Navbar Here -->
-  <div class="navbar-fixed">
-    <nav>
+  <nav>
+    <div class="navbar-fixed nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <div class="container">
-        <ul>
+        <ul class="hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="active"><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
           <li><a href="/">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li class="active"><a href="services.html">Services</a></li>
@@ -30,11 +38,10 @@
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
-    </nav>
-  </div>
-
+    </div>
+  </nav>
   <!-- Services Content Here -->
-  
+
     <div class="card">
            <div class="card-image">
             <img src="img/servicesheader.png" alt="Accounting paperwork">
@@ -175,6 +182,7 @@
 </body>
 
 <script>
+  $(".button-collapse").sideNav();
   $(document).ready(function(){
     $('.collapsible').collapsible({
       accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
