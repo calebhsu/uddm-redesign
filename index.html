@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <meta charset="utf-8">
+  <meta description="Business Bookkeepers offers bookkeeping, payroll, human resource, and consulting servvices to small businesses.">
   <title>Business Bookkeepers</title>
 </head>
 <body>
@@ -20,15 +21,25 @@
   <script src="js/script.js"></script>
 
   <!-- Navbar Here -->
-  <nav class="navbar-fixed">
-    <div class="container">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+  <nav>
+    <div class="navbar-fixed nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <div class="container">
+        <ul class="hide-on-med-and-down">
+          <li class="active"><a href="/">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -46,7 +57,7 @@
 
   <div class="section white">
     <div class="row container">
-      <h3>Your Success is Our Success</h3>
+      <h2 class="center">Your Success is Our Success</h2>
       <p class="grey-text text-darken-3 lighten-3">
         At Business Bookkeepers, we offer services that will meet the needs of small businesses. Big or small, the needs will be met through our bookkeeping, payroll, human resource, business consulting services, and more.
       </p>
@@ -103,11 +114,5 @@
     </div>
   </footer>
 </body>
-
-<script>
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
-</script>
 
 </html>
