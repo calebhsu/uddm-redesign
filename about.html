@@ -16,17 +16,28 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
 
   <!-- Navbar Here -->
-  <nav class="navbar-fixed">
-    <div class="container">
-        <ul>
+  <nav>
+    <div class="navbar-fixed nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <div class="container">
+        <ul class="hide-on-med-and-down">
           <li><a href="/">Home</a></li>
           <li class="active"><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="about.html">About Us</a></li>
+          <li ><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
