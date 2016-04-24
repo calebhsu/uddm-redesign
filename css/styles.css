@@ -14,6 +14,16 @@ main .row {
 }
 
 /* Special Styles */
+#header-img {
+  top: -1em;
+  z-index: -1;
+}
+
+.promo-caption {
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
