@@ -7,18 +7,19 @@
 
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
   <link rel="stylesheet" href="css/styles.css">
 
   <meta charset="utf-8">
   <meta description="Business Bookkeepers offers bookkeeping, payroll, human resource, and consulting servvices to small businesses.">
-  <title>About Us | Business Bookkeepers</title>
+  <title>Contact Us | Business Bookkeepers</title>
 </head>
 <body>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   <script src="js/script.js"></script>
-
+  
   <!-- Navbar Here -->
   <nav>
     <div class="navbar-fixed nav-wrapper">
@@ -26,17 +27,17 @@
       <div class="container">
         <ul class="hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="about.html">About Us</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li class="active"><a href="contact.html">Contact Us</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="/">Home</a></li>
-          <li class="active"><a href="about.html">About Us</a></li>
-          <li ><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li class="active"><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -44,49 +45,55 @@
 
   <!-- Intro Content Here -->
   <main class="container">
-    <h1 class="center title">About Us</h1>
+    <h1 class="title">Contact Us</h1>
+    <h2 class="subtitle">Feel free to reach out if you have any questions or would like to make an appointment.</h2>
+
     <div class="row">
-      <div class="col s8">
-        <h2 class="bio-name">Emilie Porter</h2>
-        <p>Born in Cambodia and raised in Stevens Point, Wisconsin.</p>
-        <p><strong>Education</strong>: Cardinal Stritch University, Bachelor's of Science in Business Administration, 2011. Milwaukee Area Technical College, Associate's in Applied Science in Banking and Finance with a minor in Accounting, 1998.<p>
-        <p><strong>Professional Experience</strong>: President, Business Bookkeepers Inc., 2011 to present. Bookkeeping and Payroll Professional, Samoeun's Happy Wok, 1998 to 2010. Human Resources, Milwaukee Center for Independence, 2008 to 2010. Regional Human Resources/Bookkeeper, IHOP, 2006 to 2008.</p>
-        <p><strong>Member</strong>: American Institute of Professional Bookkeepers since 2015. American Payroll Association since 2011. Society for Human Resource Management since 2009.</p>
-        <p><strong>Certification</strong>: PC since 2011.</p>
-        <p><strong>Community Involvements</strong>: Volunteer at Outpaws, a non-profit animal rescue organization.</p>
-        </p>
-      </div>
-      <div class="col s4">
-        <div class="card">
-          <div class="card-content">
-            <img src="img/emilie.jpg" alt="picture of emilie">
+      <form class="col s12" action="MAILTO:emilie@BBookkeepers.com" method="post" enctype="text/plain">
+        <!-- Name -->
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="first_name" type="text" class="validate" name="FirstName">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" name="LastName">
+            <label for="last_name">Last Name</label>
           </div>
         </div>
-      </div>
-    </div>
-    <hr></hr>
-    <div class="row">
-      <div class="col s8">
-        <h2 class="bio-name">Erin Boeger</h2>
-        <p>Born and raised in Madison, Wisconsin.</p>
-        <p><strong>Education</strong>: University of Colorado Boulder, Computer Science and Japanese, 2012 to present. Madison Area Technical College, Associate in Arts, Liberal Arts, 2012.</p>
-        <p><strong>Professional Experience</strong>: Lead Ruby on Rails Developer, Hewlett-Packard, 2014 to present. IT Consultant, Business Bookkeepers, Inc., 2014 to present. Lead Ruby on Rails Developer, HOMER Energy, 2013 to 2014. CEO & IT Director, Tagura Regional Management, 2004 to 2011. Real Estate Agent, 1995 to 2000. U.S. Army Special Forces, 1989 to 1995.</p>
-        <p>Experienced Ruby on Rails developer, Linux administrator, and IT executive. Effectively uses technology to increase business efficiency, communication, and profitability.</p>
-      </div>
-      <div class="col s4">
-        <div class="card">
-          <div class="card-content">
-            <img src="img/erin.jpg" alt="picture of erin">
+
+        <!--Email -->
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="subject" type="text" class="validate" name="Subject">
+            <label for="subject">Subject</label>
           </div>
         </div>
-      </div>
+
+        <!-- Message -->
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="message" class="materialize-textarea" name="Message"></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="row center">
+          <button class="btn waves-effect waves-light red" type="submit">Send</button>
+        </div>
+      </form>
     </div>
+
   </main>
 
   <!-- Footer Here -->
   <footer class="page-footer">
     <div class="container">
-      <h3 class="white-text" id="footer-header">Connect With Us</h3>
+      <h3 class="white-text">Connect With Us</h3>
       <div class="row">
         <div class="col s3">
           <p class="grey-text text-lighten-4">
