@@ -45,20 +45,20 @@
 
   <!-- Intro Content Here -->
   <main class="container">
-    <h1>Contact Us</h1>
-    <p>Feel free to reach out if you have any questions or would like to make an appointment.</p>
+    <h1 class="title">Contact Us</h1>
+    <h2 class="subtitle">Feel free to reach out if you have any questions or would like to make an appointment.</h2>
 
     <div class="row">
-      <form class="col s12">
+      <form class="col s12" action="MAILTO:emilie@BBookkeepers.com" method="post" enctype="text/plain">
         <!-- Name -->
         <div class="row">
           <div class="input-field col s6">
             <i class="material-icons prefix">account_circle</i>
-            <input id="first_name" type="text" class="validate">
+            <input id="first_name" type="text" class="validate" name="FirstName">
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
+            <input id="last_name" type="text" class="validate" name="LastName">
             <label for="last_name">Last Name</label>
           </div>
         </div>
@@ -67,8 +67,8 @@
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">email</i>
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
+            <input id="subject" type="text" class="validate" name="Subject">
+            <label for="subject">Subject</label>
           </div>
         </div>
 
@@ -76,16 +76,16 @@
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">mode_edit</i>
-            <textarea id="message" class="materialize-textarea"></textarea>
+            <textarea id="message" class="materialize-textarea" name="Message"></textarea>
             <label for="message">Message</label>
           </div>
         </div>
+
+        <!-- Submit -->
+        <div class="row center">
+          <button class="btn waves-effect waves-light red" type="submit">Send</button>
+        </div>
       </form>
-      <div class="row center">
-        <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
-          <i class="material-icons right">send</i>
-        </button>
-      </div>
     </div>
 
   </main>
@@ -93,7 +93,7 @@
   <!-- Footer Here -->
   <footer class="page-footer">
     <div class="container">
-      <h5 class="white-text">Connect With Us</h5>
+      <h3 class="white-text">Connect With Us</h3>
       <div class="row">
         <div class="col s3">
           <p class="grey-text text-lighten-4">
