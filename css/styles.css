@@ -62,6 +62,12 @@ main .row {
   font-size: 3.2em;
 }
 
+.profile {
+  border: 1.5em solid white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  margin: 1em;
+}
+
 .promo-caption {
   color: rgba(0, 0, 0, 0.75);
   font-weight: 500;
@@ -80,4 +86,10 @@ main .row {
 }
 .subtitle {
   font-size: 1.5em;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+  display: block;
 }
