@@ -23,6 +23,7 @@ hr {
 
 p {
   font-size: 1.1em;
+  line-height: 1.6em;
 }
 
 /* Materialize Styles */
@@ -63,6 +64,10 @@ main .row {
 
 #footer-header {
   font-size: 1.75em;
+}
+
+.narrow {
+  width: 60%;
 }
 
 .title {
