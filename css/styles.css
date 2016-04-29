@@ -1,4 +1,8 @@
 /* Global Styles */
+:focus {
+  outline-color: black;
+}
+
 h1 {
   font-size: 2.5em;
 }
