@@ -13,3 +13,24 @@ Make the site user-friendly by implementing
     - alternate image text
     - ARIA landmarks if necessary
   - responsive design
+  
+### Redesign
+[Live Preview](http://calebhsu.github.io/uddm-redesign/)
+- Condensed to from 6 to 5 pages
+  - consistent navigation
+  - font, line length, line-height now follow WCAG standards
+- Used Material CSS to update styling
+- Responsive
+  - navigation bar collapses to hamburger menu
+  - two-column layouts shrink to single-column layout
+- Accessible
+  - alt text
+  - hidden icon text for screen readers
+  - keyboard navigation + clear focus indicator
+  - logical semantic structure
+
+##### Original Site Landing
+![image here](img/old.png)
+
+##### Redesign Site Landing
+![image here](img/new.png)
